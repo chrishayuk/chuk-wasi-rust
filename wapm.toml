@@ -1,0 +1,16 @@
+[package]
+name = "chrishayuk/chuk-wasi-rust"
+version = "0.0.5"
+description = "this is a hello rust wasi application"
+license = "MIT"
+repository = "github.com/chrishayuk/chuk-wasi-rust"
+readme = "README.md"
+
+[[module]]
+name = "chuk-wasi-rust"
+source = "target/wasm32-wasi/release/chuk-wasi-rust.wasm"
+abi = "wasi"
+
+[[command]]
+name = "chuk-wasi-rust"
+module = "chuk-wasi-rust"
